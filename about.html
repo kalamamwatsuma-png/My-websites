@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About Us — Identity Insight Solution Ltd</title>
+<meta name="description" content="Learn about IIS LTD's mission, vision, history, and leadership team. Turnkey workforce solutions from Taita Taveta County, Kenya.">
+<link rel="stylesheet" href="style.css">
+<style>
+.mv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2rem}
+.mv-card{border-radius:var(--radius-xl);padding:2.25rem;border:1px solid transparent}
+.mv-mission{background:#f0f4ff;border-color:#d0d9f8}
+.mv-vision{background:#fff8ec;border-color:#f5e4b0}
+.mv-promise{background:#eaf7ef;border-color:#a8dfc0}
+.mv-icon{font-size:28px;margin-bottom:1rem}
+.mv-label{font-family:'Syne',sans-serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:.75rem}
+.mv-text{font-size:14px;color:var(--gray-600);line-height:1.75}
+
+.story-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:5rem;align-items:start}
+.timeline{padding-top:.5rem}
+.tl-item{display:grid;grid-template-columns:52px 16px 1fr;gap:0 14px;margin-bottom:1.5rem;align-items:start}
+.tl-year{font-family:'Syne',sans-serif;font-size:13px;font-weight:700;color:var(--crimson);padding-top:2px;text-align:right}
+.tl-dot{width:12px;height:12px;border-radius:50%;background:var(--navy);border:3px solid var(--cream);box-shadow:0 0 0 2px var(--navy);margin-top:3px;position:relative}
+.tl-dot::after{content:'';position:absolute;top:12px;left:50%;transform:translateX(-50%);width:2px;height:30px;background:var(--gray-200)}
+.tl-item:last-child .tl-dot::after{display:none}
+.tl-text{font-size:13.5px;color:var(--gray-600);line-height:1.65;padding-top:1px}
+
+.values-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem;margin-top:2rem}
+.value-card{background:#fff;border:1px solid var(--gray-100);border-radius:var(--radius-lg);padding:1.75rem;transition:var(--transition)}
+.value-card:hover{border-color:var(--navy-mid);box-shadow:var(--shadow-sm);transform:translateY(-2px)}
+.value-icon{font-size:26px;margin-bottom:.75rem}
+.value-title{font-family:'Syne',sans-serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:.5rem}
+.value-body{font-size:13px;color:var(--gray-600);line-height:1.65}
+
+.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.25rem}
+.team-card{background:#fff;border:1px solid var(--gray-100);border-radius:var(--radius-lg);padding:2rem 1.5rem;text-align:center;transition:var(--transition)}
+.team-card:hover{border-color:var(--navy-mid);box-shadow:var(--shadow-sm)}
+.avatar{width:64px;height:64px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-size:20px;font-weight:800;margin:0 auto 1rem}
+.av-navy{background:var(--navy);color:#fff}
+.av-red{background:var(--crimson);color:#fff}
+.av-green{background:#2d7a3a;color:#fff}
+.av-gold{background:var(--gold);color:var(--navy)}
+.team-name{font-family:'Syne',sans-serif;font-size:14px;font-weight:700;color:var(--navy);margin-bottom:4px}
+.team-role{font-size:12px;color:var(--gray-400)}
+
+.cta-section{background:linear-gradient(135deg,var(--navy),var(--navy-mid));padding:5rem 2rem;text-align:center}
+.cta-title{font-family:'Syne',sans-serif;font-size:clamp(22px,3vw,34px);font-weight:800;color:#fff;margin-bottom:.75rem}
+.cta-sub{color:rgba(255,255,255,.7);font-size:16px;margin-bottom:2rem}
+.cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+.bg-gray{background:var(--gray-50);border-top:1px solid var(--gray-100);border-bottom:1px solid var(--gray-100)}
+
+@media(max-width:900px){.mv-grid{grid-template-columns:1fr}.story-grid{grid-template-columns:1fr;gap:3rem}}
+
+
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="main-nav">
+  <a href="index.html" class="nav-logo">
+     <img src="IIS LTD LOGO.png" alt="IIs logo" style="height: 40px; width: auto; margin-right: 10px;">
+    <div class="nav-brand">Identity Insight Solution Ltd<span>Taita Taveta County, Kenya</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="industries.html">Industries</a></li>
+    <li><a href="why-us.html">Why Us</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Get in Touch</a>
+  <button class="nav-toggle" onclick="toggleDrawer()">&#9776;</button>
+</nav>
+<nav class="nav-drawer" id="nav-drawer">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+  <a href="industries.html">Industries</a><a href="why-us.html">Why Us</a><a href="contact.html">Contact</a>
+  <a href="contact.html" class="drawer-cta">Get in Touch</a>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-tag">Who We Are</div>
+    <h1 class="fade-up">About <em>Identity Insight</em><br>Solution Ltd</h1>
+    <p class="fade-up d1">A homegrown Kenyan company committed to building capable workforces and empowering communities through training, deployment, and institutional support.</p>
+  </div>
+</section>
+
+<!-- MISSION / VISION -->
+<section class="section">
+  <div class="container">
+    <div class="mv-grid">
+      <div class="mv-card mv-mission fade-up">
+        <div class="mv-icon">🎯</div>
+        <div class="mv-label">Our Mission</div>
+        <p class="mv-text">To deliver trained, job-ready personnel and capacity-building solutions that enable businesses, institutions, and communities across Kenya to thrive — while creating sustainable employment opportunities for local youth.</p>
+      </div>
+      <div class="mv-card mv-vision fade-up d1">
+        <div class="mv-icon">🔭</div>
+        <div class="mv-label">Our Vision</div>
+        <p class="mv-text">To be East Africa's most trusted turnkey solution provider — known for the quality of our people, the depth of our training, and the measurable impact we deliver across every sector we serve.</p>
+      </div>
+      <div class="mv-card mv-promise fade-up d2">
+        <div class="mv-icon">⭐</div>
+        <div class="mv-label">Our Promise</div>
+        <p class="mv-text">Every individual we place has been vetted, trained, and mentored. Every solution we deliver is custom-built for your context. We don't just supply people — we supply <em>prepared</em> people.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STORY + TIMELINE -->
+<section class="section bg-gray">
+  <div class="container">
+    <div class="story-grid">
+      <div>
+        <div class="section-tag">Our Story</div>
+        <h2 class="section-title">Born in Taita Taveta,<br>Built for Kenya</h2>
+        <p style="color:var(--gray-600);font-size:15px;line-height:1.8;margin-bottom:1.25rem">Identity Insight Solution Ltd was founded with a clear conviction: that the biggest barrier to business growth in Kenya's counties is not the lack of willing workers — it's the lack of <em>prepared</em> workers. We set out to close that gap.</p>
+        <p style="color:var(--gray-600);font-size:15px;line-height:1.8;margin-bottom:1.25rem">Starting in Taita Taveta County, we built a rigorous in-house training framework that takes raw talent and turns it into reliable, professional, deployable capability. What began as a small workforce agency has grown into a multi-service company with over 500 active staff deployed across retail, education, agriculture, mining, and hospitality.</p>
+        <p style="color:var(--gray-600);font-size:15px;line-height:1.8;margin-bottom:2rem">Today, IIS LTD is more than a staffing company — we are a community development engine, a skills incubator, and a strategic partner to businesses and institutions that want to grow with integrity.</p>
+        <a href="contact.html" class="btn btn-navy">Start a Conversation →</a>
+      </div>
+      <div class="timeline">
+        <h3 style="font-family:'Syne',sans-serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:1.5rem">Our Journey</h3>
+        <div class="tl-item fade-up"><div class="tl-year">2018</div><div class="tl-dot"></div><div class="tl-text">IIS LTD incorporated in Taita Taveta County, Kenya.</div></div>
+        <div class="tl-item fade-up d1"><div class="tl-year">2019</div><div class="tl-dot"></div><div class="tl-text">First batch of 30 workforce deployed to retail and hospitality partners.</div></div>
+        <div class="tl-item fade-up d2"><div class="tl-year">2020</div><div class="tl-dot"></div><div class="tl-text">Launched ICT & coding training programme in partnership with local schools.</div></div>
+        <div class="tl-item fade-up d3"><div class="tl-year">2021</div><div class="tl-dot"></div><div class="tl-text">Expanded to agriculture and mining sectors. Trained 200+ workers.</div></div>
+        <div class="tl-item fade-up d4"><div class="tl-year">2022</div><div class="tl-dot"></div><div class="tl-text">Opened SME & Institutional Support division. Partnered with 3 NGOs.</div></div>
+        <div class="tl-item fade-up d5"><div class="tl-year">2023</div><div class="tl-dot"></div><div class="tl-text">Reached milestone of 500 active deployed staff across 3 counties.</div></div>
+        <div class="tl-item fade-up"><div class="tl-year">2024</div><div class="tl-dot"></div><div class="tl-text">1,200+ individuals trained. Recognised by county government for youth empowerment.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="section">
+  <div class="container">
+    <div class="section-tag">What Guides Us</div>
+    <h2 class="section-title">Our Core Values</h2>
+    <div class="values-grid">
+      <div class="value-card fade-up"><div class="value-icon">🎯</div><div class="value-title">Purpose-Driven</div><p class="value-body">Everything we do is oriented toward measurable impact — for our clients, our workforce, and our communities.</p></div>
+      <div class="value-card fade-up d1"><div class="value-icon">🤝</div><div class="value-title">Integrity</div><p class="value-body">We operate with transparency, honesty, and accountability in every engagement we undertake.</p></div>
+      <div class="value-card fade-up d2"><div class="value-icon">💡</div><div class="value-title">Innovation</div><p class="value-body">We continuously evolve our methods, training, and technology to stay ahead of industry needs.</p></div>
+      <div class="value-card fade-up d3"><div class="value-icon">🌱</div><div class="value-title">Empowerment</div><p class="value-body">We believe trained local youth are the most powerful engine of community economic development.</p></div>
+      <div class="value-card fade-up d4"><div class="value-icon">✅</div><div class="value-title">Excellence</div><p class="value-body">We hold ourselves to high standards — if it doesn't meet the mark, we refine it until it does.</p></div>
+      <div class="value-card fade-up d5"><div class="value-icon">🌍</div><div class="value-title">Community First</div><p class="value-body">Rooted in Taita Taveta County, we invest in the people and places that make us who we are.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="section bg-gray">
+  <div class="container">
+    <div class="section-tag">Our People</div>
+    <h2 class="section-title">Leadership & Team</h2>
+    <p class="section-sub" style="margin-bottom:2.5rem">A dedicated team of professionals passionate about workforce development and community impact.</p>
+    <div class="team-grid">
+      <div class="team-card fade-up"><div class="avatar av-navy">DO</div><div class="team-name">Director of Operations</div><div class="team-role">Leadership</div></div>
+      <div class="team-card fade-up d1"><div class="avatar av-red">TL</div><div class="team-name">Training Lead</div><div class="team-role">Capacity Building</div></div>
+      <div class="team-card fade-up d2"><div class="avatar av-green">WC</div><div class="team-name">Workforce Coordinator</div><div class="team-role">Deployment</div></div>
+      <div class="team-card fade-up d3"><div class="avatar av-gold">BD</div><div class="team-name">Business Dev. Manager</div><div class="team-role">Partnerships</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-section">
+  <div class="cta-title">Join our growing partner network</div>
+  <p class="cta-sub">Whether you need staff, training, or institutional support — we're ready.</p>
+  <div class="cta-btns">
+    <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+    <a href="services.html" class="btn btn-outline">See Our Services</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand"> <img src="IIS LTD LOGO.png" alt="IIs logo" style="height: 40px; width: auto; margin-right: 10px;"><div class="footer-brand-name">Identity Insight Solution Ltd</div><div class="footer-brand-tagline">Turnkey Solution Providers — We work for your success.</div></div>
+    <div><div class="footer-col-title">Quick Links</div><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="industries.html">Industries</a></li><li><a href="why-us.html">Why Us</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div><div class="footer-col-title">Contact</div><div class="footer-contact-item">📍 Taita Taveta County, Kenya</div><div class="footer-contact-item">📞 +254 790 218 788</div><div class="footer-contact-item">✉️ info@identityinsight.co.ke</div></div>
+    <div><div class="footer-col-title">Chat With Us</div><p style="font-size:13px;margin-bottom:.75rem;color:rgba(255,255,255,.45)">Need quick answers? Reach us on WhatsApp.</p><button onclick="window.open('https://wa.me/254790218788','_blank')" class="footer-wa">💬 WhatsApp Us</button></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Identity Insight Solution Ltd. All rights reserved.</span><span class="footer-bottom-right">Registered in Kenya · Taita Taveta County</span></div>
+</footer>
+<button class="wa-float" onclick="window.open('https://wa.me/254790218788','_blank')"><svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></button>
+<script src="main.js"></script>
+</body>
+</html>

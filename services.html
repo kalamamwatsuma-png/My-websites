@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Our Services — Identity Insight Solution Ltd</title>
+<meta name="description" content="Workforce deployment, training & capacity building, and SME support — comprehensive turnkey solutions from IIS LTD Kenya.">
+<link rel="stylesheet" href="style.css">
+<style>
+.services-full{display:flex;flex-direction:column;gap:3rem}
+.svc-block{background:#fff;border:1px solid var(--gray-100);border-radius:var(--radius-xl);padding:2.75rem;scroll-margin-top:90px;transition:var(--transition)}
+.svc-block:hover{box-shadow:var(--shadow-md)}
+.svc-top{display:flex;align-items:flex-start;gap:1.5rem;margin-bottom:1.5rem;flex-wrap:wrap}
+.svc-icon-lg{width:64px;height:64px;border-radius:18px;display:flex;align-items:center;justify-content:center;font-size:28px;flex-shrink:0}
+.si-blue{background:#e6f1fb}.si-red{background:#fcebeb}.si-green{background:#eaf3de}
+.svc-meta{}
+.svc-title{font-family:'Syne',sans-serif;font-size:22px;font-weight:800;color:var(--navy);margin-bottom:.4rem}
+.svc-subtitle{font-size:14px;color:var(--gray-400)}
+.svc-desc{font-size:15px;color:var(--gray-600);line-height:1.8;margin-bottom:1.5rem}
+.feature-list{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px 1.5rem;margin-bottom:1.5rem}
+.feature-list li{font-size:13.5px;color:var(--gray-600);display:flex;align-items:flex-start;gap:8px}
+.fcheck{color:var(--crimson);font-weight:700;flex-shrink:0;margin-top:1px}
+.svc-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:1.5rem}
+.svc-tag{background:rgba(26,42,108,.08);color:var(--navy);font-family:'Syne',sans-serif;font-size:11px;font-weight:700;padding:4px 12px;border-radius:20px}
+.svc-cta{display:flex;gap:12px;flex-wrap:wrap}
+
+.process-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.25rem;margin-top:2rem}
+.process-step{background:#fff;border:1px solid var(--gray-100);border-radius:var(--radius-lg);padding:1.75rem;transition:var(--transition)}
+.process-step:hover{border-color:var(--navy-mid);box-shadow:var(--shadow-sm)}
+.step-num{font-family:'Syne',sans-serif;font-size:36px;font-weight:800;color:var(--gray-100);line-height:1;margin-bottom:.75rem}
+.step-title{font-family:'Syne',sans-serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:.5rem}
+.step-body{font-size:13px;color:var(--gray-600);line-height:1.65}
+
+.bg-gray{background:var(--gray-50);border-top:1px solid var(--gray-100);border-bottom:1px solid var(--gray-100)}
+.cta-section{background:linear-gradient(135deg,var(--navy),var(--navy-mid));padding:5rem 2rem;text-align:center}
+.cta-title{font-family:'Syne',sans-serif;font-size:clamp(22px,3vw,32px);font-weight:800;color:#fff;margin-bottom:.75rem}
+.cta-sub{color:rgba(255,255,255,.7);font-size:16px;margin-bottom:2rem}
+.cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* Quick nav tabs */
+.svc-nav{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:3rem}
+.svc-nav a{background:#fff;border:1.5px solid var(--gray-100);color:var(--navy);font-family:'Syne',sans-serif;font-size:13px;font-weight:600;padding:8px 18px;border-radius:20px;transition:var(--transition)}
+.svc-nav a:hover{border-color:var(--navy);background:var(--navy);color:#fff}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="main-nav">
+  <a href="index.html" class="nav-logo"> <img src="IIS LTD LOGO.png" alt="IIs logo" style="height: 40px; width: auto; margin-right: 10px;"><div class="nav-brand">Identity Insight Solution Ltd<span>Taita Taveta County, Kenya</span></div></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+    <li><a href="services.html" class="active">Services</a></li>
+    <li><a href="industries.html">Industries</a></li><li><a href="why-us.html">Why Us</a></li><li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Get in Touch</a>
+  <button class="nav-toggle" onclick="toggleDrawer()">&#9776;</button>
+</nav>
+<nav class="nav-drawer" id="nav-drawer">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+  <a href="industries.html">Industries</a><a href="why-us.html">Why Us</a><a href="contact.html">Contact</a>
+  <a href="contact.html" class="drawer-cta">Get in Touch</a>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-tag">What We Do</div>
+    <h1 class="fade-up">Comprehensive <em>Turnkey</em><br>Workforce Solutions</h1>
+    <p class="fade-up d1">From recruiting and training to deployment and ongoing support — we cover every step of the workforce lifecycle.</p>
+    <div class="page-hero-btns fade-up d2">
+      <a href="contact.html" class="btn btn-primary">Request a Service</a>
+      <a href="#workforce" class="btn btn-outline">Explore Services ↓</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <!-- Quick-jump nav -->
+    <div class="svc-nav">
+      <a href="#workforce">👥 Workforce Deployment</a>
+      <a href="#training">📚 Training & Capacity</a>
+      <a href="#sme">🏢 SME & Institutional Support</a>
+    </div>
+
+    <div class="services-full">
+
+      <!-- SERVICE 1 -->
+      <div class="svc-block fade-up" id="workforce">
+        <div class="svc-top">
+          <div class="svc-icon-lg si-blue">👥</div>
+          <div class="svc-meta">
+            <div class="svc-title">Workforce Deployment & Outsourcing</div>
+            <div class="svc-subtitle">Supplying job-ready personnel across diverse sectors</div>
+          </div>
+        </div>
+        <p class="svc-desc">We supply vetted, trained, and mentored personnel to businesses, institutions, and organizations across diverse sectors. Our workforce pool includes ICT teachers, coding instructors, cashiers, stock controllers, farm workers, casual mining labour, and administrative support staff. Every candidate goes through our in-house preparation programme before deployment.</p>
+        <ul class="feature-list">
+          <li><span class="fcheck">✓</span> Pre-deployment skills training</li>
+          <li><span class="fcheck">✓</span> Conduct & professional ethics coaching</li>
+          <li><span class="fcheck">✓</span> Ongoing supervision & performance review</li>
+          <li><span class="fcheck">✓</span> Quick replacements guaranteed</li>
+          <li><span class="fcheck">✓</span> Short-term and long-term contracts</li>
+          <li><span class="fcheck">✓</span> Multi-sector placement capability</li>
+        </ul>
+        <div class="svc-tags">
+          <span class="svc-tag">Education</span><span class="svc-tag">Retail & Hospitality</span>
+          <span class="svc-tag">Agriculture</span><span class="svc-tag">Mining</span><span class="svc-tag">Manufacturing</span>
+        </div>
+        <div class="svc-cta">
+          <a href="contact.html" class="btn btn-primary">Request This Service</a>
+          <a href="industries.html" class="btn btn-outline-navy">View Industries →</a>
+        </div>
+      </div>
+
+      <!-- SERVICE 2 -->
+      <div class="svc-block fade-up" id="training">
+        <div class="svc-top">
+          <div class="svc-icon-lg si-red">📚</div>
+          <div class="svc-meta">
+            <div class="svc-title">Training & Capacity Building</div>
+            <div class="svc-subtitle">Practical skills for youth and staff alike</div>
+          </div>
+        </div>
+        <p class="svc-desc">Our training programmes are designed to equip youth and existing staff with market-relevant, practical skills. We deliver both institutional training (for organizations) and community-level training (for youth and job seekers). Programmes are facilitated by experienced practitioners and cover ICT & coding, professional conduct, customer service excellence, administrative operations, financial literacy, and safety practices.</p>
+        <ul class="feature-list">
+          <li><span class="fcheck">✓</span> ICT & coding fundamentals</li>
+          <li><span class="fcheck">✓</span> Customer service excellence</li>
+          <li><span class="fcheck">✓</span> Administrative & office operations</li>
+          <li><span class="fcheck">✓</span> Financial literacy for SMEs</li>
+          <li><span class="fcheck">✓</span> Farm & mining safety training</li>
+          <li><span class="fcheck">✓</span> Loss prevention & security</li>
+        </ul>
+        <div class="svc-tags">
+          <span class="svc-tag">Schools</span><span class="svc-tag">SMEs</span>
+          <span class="svc-tag">Government Agencies</span><span class="svc-tag">Community Groups</span>
+        </div>
+        <div class="svc-cta">
+          <a href="contact.html" class="btn btn-primary">Request Training</a>
+          <a href="about.html" class="btn btn-outline-navy">Our Approach →</a>
+        </div>
+      </div>
+
+      <!-- SERVICE 3 -->
+      <div class="svc-block fade-up" id="sme">
+        <div class="svc-top">
+          <div class="svc-icon-lg si-green">🏢</div>
+          <div class="svc-meta">
+            <div class="svc-title">SME & Institutional Support</div>
+            <div class="svc-subtitle">Building organizational capacity from the inside out</div>
+          </div>
+        </div>
+        <p class="svc-desc">We partner with educational institutions, government agencies, NGOs, and community organizations to build their internal capacity and operational effectiveness. Our SME support covers business planning, proposal writing for funding opportunities, financial management training, CBO registration guidance, and follow-up mentorship. We've helped dozens of organizations secure grants and improve their governance.</p>
+        <ul class="feature-list">
+          <li><span class="fcheck">✓</span> Business development consulting</li>
+          <li><span class="fcheck">✓</span> Grant proposal writing</li>
+          <li><span class="fcheck">✓</span> Financial management training</li>
+          <li><span class="fcheck">✓</span> CBO & NGO registration support</li>
+          <li><span class="fcheck">✓</span> Follow-up mentorship programmes</li>
+          <li><span class="fcheck">✓</span> Community project facilitation</li>
+        </ul>
+        <div class="svc-tags">
+          <span class="svc-tag">Schools</span><span class="svc-tag">NGOs</span>
+          <span class="svc-tag">CBOs</span><span class="svc-tag">Government</span><span class="svc-tag">Small Businesses</span>
+        </div>
+        <div class="svc-cta">
+          <a href="contact.html" class="btn btn-primary">Get Support</a>
+          <a href="contact.html" class="btn btn-outline-navy">Talk to Us →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section bg-gray">
+  <div class="container">
+    <div class="section-tag">How It Works</div>
+    <h2 class="section-title">Our Process</h2>
+    <p class="section-sub" style="margin-bottom:0">From first enquiry to fully deployed workforce — a clear, accountable process.</p>
+    <div class="process-grid">
+      <div class="process-step fade-up"><div class="step-num">01</div><div class="step-title">Enquiry</div><p class="step-body">You reach out via our contact form, WhatsApp, or phone to describe your workforce or training needs.</p></div>
+      <div class="process-step fade-up d1"><div class="step-num">02</div><div class="step-title">Assessment</div><p class="step-body">We conduct a structured assessment to understand your requirements, timeline, and operational context.</p></div>
+      <div class="process-step fade-up d2"><div class="step-num">03</div><div class="step-title">Proposal</div><p class="step-body">We prepare a tailored service proposal with clear scope, timelines, and transparent pricing.</p></div>
+      <div class="process-step fade-up d3"><div class="step-num">04</div><div class="step-title">Preparation</div><p class="step-body">Selected candidates undergo our in-house training specific to your industry and operational needs.</p></div>
+      <div class="process-step fade-up d4"><div class="step-num">05</div><div class="step-title">Deployment</div><p class="step-body">Trained personnel are deployed to your site with all required documentation and onboarding support.</p></div>
+      <div class="process-step fade-up d5"><div class="step-num">06</div><div class="step-title">Follow-Up</div><p class="step-body">We maintain oversight and regular check-ins to ensure performance meets your expectations.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-section">
+  <div class="cta-title">Not sure which service fits?</div>
+  <p class="cta-sub">Reach out — we'll assess your needs and recommend the right solution at no obligation.</p>
+  <div class="cta-btns">
+    <a href="contact.html" class="btn btn-primary">Talk to Us →</a>
+    <a href="why-us.html" class="btn btn-outline">Why Choose IIS?</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand"> <img src="IIS LTD LOGO.png" alt="IIs logo" style="height: 40px; width: auto; margin-right: 10px;"><div class="footer-brand-name">Identity Insight Solution Ltd</div><div class="footer-brand-tagline">Turnkey Solution Providers — We work for your success.</div></div>
+    <div><div class="footer-col-title">Quick Links</div><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="industries.html">Industries</a></li><li><a href="why-us.html">Why Us</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div><div class="footer-col-title">Contact</div><div class="footer-contact-item">📍 Taita Taveta County, Kenya</div><div class="footer-contact-item">📞 +254 790 218 788</div><div class="footer-contact-item">✉️ info@identityinsight.co.ke</div></div>
+    <div><div class="footer-col-title">Chat With Us</div><p style="font-size:13px;margin-bottom:.75rem;color:rgba(255,255,255,.45)">Need quick answers? Reach us on WhatsApp.</p><button onclick="window.open('https://wa.me/254790218788','_blank')" class="footer-wa">💬 WhatsApp Us</button></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Identity Insight Solution Ltd. All rights reserved.</span><span class="footer-bottom-right">Registered in Kenya · Taita Taveta County</span></div>
+</footer>
+<button class="wa-float" onclick="window.open('https://wa.me/254790218788','_blank')"><svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></button>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact Us — Identity Insight Solution Ltd</title>
+<meta name="description" content="Get in touch with IIS LTD. We respond within 24 hours. Call, email, or chat on WhatsApp.">
+<link rel="stylesheet" href="style.css">
+<style>
+.contact-page-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:5rem;align-items:start}
+.info-list{display:flex;flex-direction:column;gap:1.25rem;margin-bottom:2rem}
+.info-row{display:flex;align-items:flex-start;gap:14px}
+.info-icon{width:42px;height:42px;background:#e6f1fb;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0}
+.info-label{font-size:11.5px;color:var(--gray-400);font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:3px}
+.info-val{font-size:14.5px;font-weight:500;line-height:1.6;color:var(--gray-900)}
+.info-val a{color:var(--navy)}
+.info-val a:hover{color:var(--crimson);text-decoration:underline}
+
+.form-card{background:#fff;border:1px solid var(--gray-100);border-radius:var(--radius-xl);padding:2.5rem;box-shadow:var(--shadow-sm)}
+.form-row-2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form-title{font-family:'Syne',sans-serif;font-size:20px;font-weight:700;color:var(--navy);margin-bottom:1.5rem}
+.submit-btn{width:100%;background:var(--navy);color:#fff;border:none;padding:13px;border-radius:var(--radius-md);font-family:'Syne',sans-serif;font-size:15px;font-weight:600;cursor:pointer;transition:var(--transition);margin-top:.5rem}
+.submit-btn:hover{background:var(--crimson)}
+.submit-btn:disabled{opacity:.6;cursor:not-allowed}
+
+.map-box{background:linear-gradient(135deg,#e8f5ee,#d1fae5);border-radius:var(--radius-xl);padding:3rem;text-align:center;border:1px solid #a8dfc0;margin-top:1.5rem}
+.map-pin{font-size:40px;margin-bottom:.75rem}
+.map-label{font-family:'Syne',sans-serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:4px}
+.map-sub{font-size:14px;color:var(--gray-400);margin-bottom:1.25rem}
+
+.quick-contacts{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:2.5rem}
+.qc-card{background:var(--gray-50);border:1px solid var(--gray-100);border-radius:var(--radius-lg);padding:1.5rem;text-align:center;transition:var(--transition)}
+.qc-card:hover{border-color:var(--navy);box-shadow:var(--shadow-sm)}
+.qc-icon{font-size:26px;margin-bottom:.5rem}
+.qc-label{font-family:'Syne',sans-serif;font-size:13px;font-weight:700;color:var(--navy);margin-bottom:4px}
+.qc-val{font-size:13px;color:var(--gray-600)}
+.qc-val a{color:var(--navy);font-weight:500}
+
+.wa-section{background:var(--green);border-radius:var(--radius-lg);padding:1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-top:1.25rem;flex-wrap:wrap}
+.wa-text h4{font-family:'Syne',sans-serif;font-size:16px;font-weight:700;color:#fff;margin-bottom:3px}
+.wa-text p{font-size:13px;color:rgba(255,255,255,.8)}
+
+@media(max-width:860px){.contact-page-grid{grid-template-columns:1fr;gap:3rem}.form-row-2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="main-nav">
+  <a href="index.html" class="nav-logo"> <img src="IIS LTD LOGO.png" alt="IIs logo" style="height: 40px; width: auto; margin-right: 10px;"><div class="nav-brand">Identity Insight Solution Ltd<span>Taita Taveta County, Kenya</span></div></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li><li><a href="industries.html">Industries</a></li>
+    <li><a href="why-us.html">Why Us</a></li><li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Get in Touch</a>
+  <button class="nav-toggle" onclick="toggleDrawer()">&#9776;</button>
+</nav>
+<nav class="nav-drawer" id="nav-drawer">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+  <a href="industries.html">Industries</a><a href="why-us.html">Why Us</a><a href="contact.html">Contact</a>
+  <a href="contact.html" class="drawer-cta">Get in Touch</a>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-tag">Reach Us</div>
+    <h1 class="fade-up">Let's Start a<br><em>Conversation</em></h1>
+    <p class="fade-up d1">Whether you need workforce solutions, training, or institutional support — we're here. We respond to all enquiries within 24 hours.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-page-grid">
+
+      <!-- LEFT: INFO -->
+      <div>
+        <div class="section-tag">Contact Information</div>
+        <h2 class="section-title" style="margin-bottom:1rem">Always Here to Help</h2>
+        <p style="font-size:15px;color:var(--gray-600);line-height:1.75;margin-bottom:2rem">We're a local company and we take pride in fast, personal responses. Someone from our team will get back to you within 24 hours.</p>
+
+        <div class="info-list">
+          <div class="info-row fade-up">
+            <div class="info-icon">📍</div>
+            <div><div class="info-label">Address</div><div class="info-val">Taita Taveta County, Kenya<br><span style="font-size:13px;color:var(--gray-400)">P.O. Box 613-80100 GPO Mombasa</span></div></div>
+          </div>
+          <div class="info-row fade-up d1">
+            <div class="info-icon">📞</div>
+            <div><div class="info-label">Phone</div><div class="info-val"><a href="tel:+254790218788">+254 790 218 788</a><br><a href="tel:+254755806497">+254 755 806 497</a></div></div>
+          </div>
+          <div class="info-row fade-up d2">
+            <div class="info-icon">✉️</div>
+            <div><div class="info-label">Email</div><div class="info-val"><a href="mailto:info@identityinsight.co.ke">info@identityinsight.co.ke</a><br><a href="mailto:iisltd@identityinsight.co.ke">iisltd@identityinsight.co.ke</a></div></div>
+          </div>
+          <div class="info-row fade-up d3">
+            <div class="info-icon">⏰</div>
+            <div><div class="info-label">Office Hours</div><div class="info-val">Monday – Friday: 8:00 AM – 5:00 PM<br>Saturday: 9:00 AM – 1:00 PM</div></div>
+          </div>
+        </div>
+
+        <!-- WhatsApp highlight -->
+        <div class="wa-section fade-up">
+          <div class="wa-text">
+            <h4>Chat on WhatsApp</h4>
+            <p>For the fastest response — message us now.</p>
+          </div>
+          <button onclick="window.open('https://wa.me/254790218788','_blank')" class="btn" style="background:#fff;color:var(--green);font-size:14px;flex-shrink:0">
+            💬 Open Chat
+          </button>
+        </div>
+
+        <!-- Map placeholder -->
+        <div class="map-box fade-up">
+          <div class="map-pin">🗺️</div>
+          <div class="map-label">IIS Limited</div>
+          <div class="map-sub">Taita Taveta County, Kenya</div>
+          <a href="https://maps.google.com/?q=Taita+Taveta+County+Kenya" target="_blank" rel="noopener" class="btn btn-navy">
+            Open in Google Maps
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT: FORM -->
+      <div class="form-card fade-up d1">
+        <div class="section-tag">Send a Message</div>
+        <div class="form-title">We'll respond within 24 hours</div>
+        <div class="form-row-2">
+          <div class="form-group"><label>Full Name *</label><input class="form-control" type="text" placeholder="Your name" id="f-name"></div>
+          <div class="form-group"><label>Email Address *</label><input class="form-control" type="email" placeholder="your@email.com" id="f-email"></div>
+        </div>
+        <div class="form-row-2">
+          <div class="form-group"><label>Phone Number</label><input class="form-control" type="tel" placeholder="+254 ..."></div>
+          <div class="form-group"><label>Service of Interest</label>
+            <select class="form-control">
+              <option value="">Select a service...</option>
+              <option>Workforce Deployment & Outsourcing</option>
+              <option>Training & Capacity Building</option>
+              <option>SME & Institutional Support</option>
+              <option>General Enquiry</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group"><label>Message *</label><textarea class="form-control" placeholder="Tell us about your staffing or training needs..." id="f-msg" rows="5"></textarea></div>
+        <button class="submit-btn" onclick="handleSubmit()">Send Message →</button>
+        <div id="form-success" class="alert alert-success" style="display:none">✓ Message sent! We'll be in touch shortly.</div>
+
+        <!-- Quick contact cards -->
+        <div style="margin-top:2rem;padding-top:2rem;border-top:1px solid var(--gray-100)">
+          <p style="font-size:13px;color:var(--gray-400);margin-bottom:1rem;font-weight:500">Or reach us directly:</p>
+          <div class="quick-contacts">
+            <a href="tel:+254790218788" class="qc-card">
+              <div class="qc-icon">📞</div>
+              <div class="qc-label">Call Us</div>
+              <div class="qc-val">+254 790 218 788</div>
+            </a>
+            <a href="https://wa.me/254790218788" target="_blank" class="qc-card">
+              <div class="qc-icon">💬</div>
+              <div class="qc-label">WhatsApp</div>
+              <div class="qc-val">Chat instantly</div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand"> <img src="IIS LTD LOGO.png" alt="IIs logo" style="height: 40px; width: auto; margin-right: 10px;"><div class="footer-brand-name">Identity Insight Solution Ltd</div><div class="footer-brand-tagline">Turnkey Solution Providers — We work for your success.</div></div>
+    <div><div class="footer-col-title">Quick Links</div><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="industries.html">Industries</a></li><li><a href="why-us.html">Why Us</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div><div class="footer-col-title">Contact</div><div class="footer-contact-item">📍 Taita Taveta County, Kenya</div><div class="footer-contact-item">📞 +254 790 218 788</div><div class="footer-contact-item">✉️ info@identityinsight.co.ke</div></div>
+    <div><div class="footer-col-title">Chat With Us</div><p style="font-size:13px;margin-bottom:.75rem;color:rgba(255,255,255,.45)">Need quick answers? Reach us on WhatsApp.</p><button onclick="window.open('https://wa.me/254790218788','_blank')" class="footer-wa">💬 WhatsApp Us</button></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Identity Insight Solution Ltd. All rights reserved.</span><span class="footer-bottom-right">Registered in Kenya · Taita Taveta County</span></div>
+</footer>
+<button class="wa-float" onclick="window.open('https://wa.me/254790218788','_blank')"><svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></button>
+<script src="main.js"></script>
+</body>
+</html>

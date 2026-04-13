@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Industries We Serve — Identity Insight Solution Ltd</title>
+<meta name="description" content="IIS LTD serves schools, retail, agriculture, mining, manufacturing, and more in Taita Taveta County, Kenya.">
+<link rel="stylesheet" href="style.css">
+<style>
+.ind-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.5rem}
+.ind-card{background:#fff;border:1px solid var(--gray-100);border-radius:var(--radius-xl);padding:2rem;transition:var(--transition);scroll-margin-top:90px}
+.ind-card:hover{border-color:var(--gray-200);box-shadow:var(--shadow-md);transform:translateY(-2px)}
+.ind-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1rem}
+.ind-icon{width:54px;height:54px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:24px}
+.ic-blue{background:#e6f1fb}.ic-red{background:#fcebeb}.ic-green{background:#eaf3de}.ic-gold{background:#fdf3c8}
+.ind-hl{font-family:'Syne',sans-serif;font-size:11px;font-weight:700;background:rgba(26,42,108,.08);color:var(--navy);padding:3px 10px;border-radius:20px}
+.ind-title{font-family:'Syne',sans-serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:.65rem}
+.ind-desc{font-size:13.5px;color:var(--gray-600);line-height:1.7;margin-bottom:1rem;flex:1}
+.ind-roles{display:flex;flex-wrap:wrap;gap:7px}
+.ind-role{background:var(--gray-50);border:1px solid var(--gray-100);color:var(--gray-600);font-size:11.5px;padding:4px 12px;border-radius:20px}
+
+.cta-section{background:linear-gradient(135deg,var(--navy),var(--navy-mid));padding:5rem 2rem;text-align:center}
+.cta-title{font-family:'Syne',sans-serif;font-size:clamp(22px,3vw,32px);font-weight:800;color:#fff;margin-bottom:.75rem}
+.cta-sub{color:rgba(255,255,255,.7);font-size:16px;margin-bottom:2rem}
+.cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="main-nav">
+  <a href="index.html" class="nav-logo"> <img src="IIS LTD LOGO.png" alt="IIs logo" style="height: 40px; width: auto; margin-right: 10px;"><div class="nav-brand">Identity Insight Solution Ltd<span>Taita Taveta County, Kenya</span></div></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li><li><a href="industries.html" class="active">Industries</a></li>
+    <li><a href="why-us.html">Why Us</a></li><li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Get in Touch</a>
+  <button class="nav-toggle" onclick="toggleDrawer()">&#9776;</button>
+</nav>
+<nav class="nav-drawer" id="nav-drawer">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+  <a href="industries.html">Industries</a><a href="why-us.html">Why Us</a><a href="contact.html">Contact</a>
+  <a href="contact.html" class="drawer-cta">Get in Touch</a>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-tag">Where We Work</div>
+    <h1 class="fade-up">Industries We <em>Serve</em></h1>
+    <p class="fade-up d1">From classrooms to mine sites, we deploy trained, prepared personnel wherever your operations need them.</p>
+    <div class="page-hero-btns fade-up d2">
+      <a href="contact.html" class="btn btn-primary">Find Workforce Now</a>
+      <a href="services.html" class="btn btn-outline">Our Services →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-tag">Sectors</div>
+    <h2 class="section-title">All Industries We Cover</h2>
+    <p class="section-sub" style="margin-bottom:2.5rem">We operate across six key sectors, with specialist personnel trained for each environment.</p>
+    <div class="ind-grid">
+
+      <div class="ind-card fade-up" id="schools">
+        <div class="ind-top"><div class="ind-icon ic-blue">🏫</div><span class="ind-hl">50+ schools served</span></div>
+        <div class="ind-title">Education & Schools</div>
+        <p class="ind-desc">We place ICT and coding teachers, classroom assistants, and administrative staff in schools across Taita Taveta County. Our teachers are trained in CBC-aligned delivery, digital literacy, and classroom management.</p>
+        <div class="ind-roles"><span class="ind-role">ICT Teachers</span><span class="ind-role">Coding Instructors</span><span class="ind-role">Admin Staff</span><span class="ind-role">Library Assistants</span></div>
+      </div>
+
+      <div class="ind-card fade-up d1" id="retail">
+        <div class="ind-top"><div class="ind-icon ic-red">🛒</div><span class="ind-hl">100+ retail placements</span></div>
+        <div class="ind-title">Retail & Hospitality</div>
+        <p class="ind-desc">From supermarkets and convenience stores to hotels and restaurants, we supply trained cashiers, stock controllers, customer-service agents, and hospitality staff who are ready to perform from day one.</p>
+        <div class="ind-roles"><span class="ind-role">Cashiers</span><span class="ind-role">Stock Controllers</span><span class="ind-role">Customer Service</span><span class="ind-role">Waitstaff</span></div>
+      </div>
+
+      <div class="ind-card fade-up d2" id="agriculture">
+        <div class="ind-top"><div class="ind-icon ic-green">🌾</div><span class="ind-hl">Seasonal & permanent</span></div>
+        <div class="ind-title">Agriculture & Farming</div>
+        <p class="ind-desc">Our agricultural workers are trained in farm safety, basic agronomy, irrigation support, and orchard operations. We supply seasonal and permanent farm hands to commercial farms across the coast and hinterland.</p>
+        <div class="ind-roles"><span class="ind-role">Farm Workers</span><span class="ind-role">Orchard Labourers</span><span class="ind-role">Irrigation Support</span><span class="ind-role">Supervisors</span></div>
+      </div>
+
+      <div class="ind-card fade-up d3" id="mining">
+        <div class="ind-top"><div class="ind-icon ic-gold">⛏️</div><span class="ind-hl">Safety-first workforce</span></div>
+        <div class="ind-title">Mining & Extractives</div>
+        <p class="ind-desc">Mining operations require reliable, safety-conscious casual and skilled labour. Our mining workforce undergoes mandatory safety training before deployment, ensuring compliance and reducing on-site risk.</p>
+        <div class="ind-roles"><span class="ind-role">Casual Labourers</span><span class="ind-role">Safety Marshals</span><span class="ind-role">Site Supervisors</span><span class="ind-role">Equipment Ops</span></div>
+      </div>
+
+      <div class="ind-card fade-up d4" id="manufacturing">
+        <div class="ind-top"><div class="ind-icon ic-blue">🏭</div><span class="ind-hl">Bakeries & light industry</span></div>
+        <div class="ind-title">Manufacturing & SMEs</div>
+        <p class="ind-desc">Small-scale manufacturers — from bakeries and food processors to artisan workshops — benefit from our trained production assistants, quality-check staff, and supervisory personnel.</p>
+        <div class="ind-roles"><span class="ind-role">Production Assistants</span><span class="ind-role">Quality Control</span><span class="ind-role">Packing Staff</span><span class="ind-role">Line Supervisors</span></div>
+      </div>
+
+      <div class="ind-card fade-up d5" id="kinyozi">
+        <div class="ind-top"><div class="ind-icon ic-red">✂️</div><span class="ind-hl">Community micro-business</span></div>
+        <div class="ind-title">Kinyozi, Parlours & Shops</div>
+        <p class="ind-desc">We train and deploy attendants for barbershops, salons, juice bars, and boutique retail shops — covering customer engagement, cash handling, and hygiene standards relevant to each setting.</p>
+        <div class="ind-roles"><span class="ind-role">Shop Attendants</span><span class="ind-role">Juice Bar Staff</span><span class="ind-role">Cashiers</span><span class="ind-role">General Assistants</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="cta-section">
+  <div class="cta-title">Don't see your sector?</div>
+  <p class="cta-sub">We work across many contexts. Reach out and we'll assess how we can support your operation.</p>
+  <div class="cta-btns">
+    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+    <a href="services.html" class="btn btn-outline">View Services</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand"> <img src="IIS LTD LOGO.png" alt="IIs logo" style="height: 40px; width: auto; margin-right: 10px;"><div class="footer-brand-name">Identity Insight Solution Ltd</div><div class="footer-brand-tagline">Turnkey Solution Providers — We work for your success.</div></div>
+    <div><div class="footer-col-title">Quick Links</div><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="industries.html">Industries</a></li><li><a href="why-us.html">Why Us</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div><div class="footer-col-title">Contact</div><div class="footer-contact-item">📍 Taita Taveta County, Kenya</div><div class="footer-contact-item">📞 +254 790 218 788</div><div class="footer-contact-item">✉️ info@identityinsight.co.ke</div></div>
+    <div><div class="footer-col-title">Chat With Us</div><p style="font-size:13px;margin-bottom:.75rem;color:rgba(255,255,255,.45)">Need quick answers? Reach us on WhatsApp.</p><button onclick="window.open('https://wa.me/254790218788','_blank')" class="footer-wa">💬 WhatsApp Us</button></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Identity Insight Solution Ltd. All rights reserved.</span><span class="footer-bottom-right">Registered in Kenya · Taita Taveta County</span></div>
+</footer>
+<button class="wa-float" onclick="window.open('https://wa.me/254790218788','_blank')"><svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></button>
+<script src="main.js"></script>
+</body>
+</html>
