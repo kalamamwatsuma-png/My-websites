@@ -61,7 +61,7 @@ button{cursor:pointer;font-family:'DM Sans',sans-serif}
 .nav-cta{background:var(--crimson);color:#fff;padding:8px 18px;border-radius:var(--radius-sm);font-size:13px;font-weight:600;border:none;transition:var(--transition)}
 .nav-cta:hover{background:var(--crimson-dk);transform:translateY(-1px)}
 .nav-toggle{display:none;background:none;border:none;color:#fff;font-size:22px;padding:4px}
-.nav-drawer{display:none;flex-direction:column;background:var(--navy-deep);border-top:1px solid rgba(255,255,255,.08);padding:0;max-height:0;overflow:hidden;transition:max-height .35s ease,padding .3s}
+.nav-drawer{display: flex;flex-direction:column;background:var(--navy-deep);border-top:1px solid rgba(255,255,255,.08);padding:0;max-height:0;overflow:hidden;transition:max-height .35s ease,padding .3s}
 .nav-drawer.open{max-height:400px;padding:1rem 1.5rem 1.5rem}
 .nav-drawer a{display:block;color:rgba(255,255,255,.8);font-size:16px;font-weight:500;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.07);transition:color .2s}
 .nav-drawer a:hover{color:var(--gold)}
