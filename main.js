@@ -27,7 +27,8 @@ counters.forEach(counter => {
       counter.innerText = target;
     }
   }
-}
+  updateCount();
+  
 // Active nav link highlight based on current page
 (function(){
   const page = location.pathname.split('/').pop() || 'index.html';
