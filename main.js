@@ -8,6 +8,25 @@ function toggleDrawer(){
   const d = document.getElementById('nav-drawer');
   if(d) d.classList.toggle('open');
 }
+// Starts animation
+const counters = document.querySelectorAll('.stat-n');
+
+counters.forEach(counter => {
+  const target = +counter.getAttribute('data-target');
+  let count = 0;
+
+  const increment = target / 100; // controls speed
+
+  function updateCount() {
+    count += increment;
+
+    if (count < target) {
+      counter.innerText = Math.floor(count);
+      requestAnimationFrame(updateCount);
+    } else {
+      counter.innerText = target;
+    }
+  }
 
 // Active nav link highlight based on current page
 (function(){
